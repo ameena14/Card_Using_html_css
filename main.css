@@ -1,0 +1,69 @@
+/* General styles */
+body {
+    background-color: pink;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Shared styles for all product boxes */
+.best1, .best2, .best3, .best4, .best5 {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px; 
+    text-align: start;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Large screen (desktop) styles */
+@media (min-width: 1200px) {
+    .best1, .best2, .best3, .best4, .best5 {
+        width: 30%;
+        padding: 50px;
+        margin: 50px auto;
+    }
+}
+
+/* Medium screen (tablets and small laptops) */
+@media (max-width: 1200px) and (min-width: 768px) {
+    .best1, .best2, .best3, .best4, .best5 {
+        width: 50%;
+        padding: 30px;
+    }
+}
+
+/* Small screen (mobile phones) */
+@media (max-width: 768px) {
+    .best1, .best2, .best3, .best4, .best5 {
+        width: 90%;
+        padding: 20px;
+        margin: 10px auto;
+    }
+}
+.price{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.image{
+        width: 200px; 
+        height: 250px;  
+}
+.price-details {
+    display: flex;
+    justify-content: space-between; /* Align items to the left and right */
+    padding: 10px 0; /* Add some space between lines */
+}
+
+.line {
+    height: 2px; 
+    width: 100%; 
+    background: black; 
+    margin: 5px 0; 
+}
+.decrease-btn:hover{
+    background: blue;
+}
+.increase-btn{
+    background: pink;
+}
+.quantity-control:hover{
+    border-radius: 5px;
+}

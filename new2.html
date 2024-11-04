@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cart-container">
+        <h2>Product: iPhone 15</h2>
+        <div class="product-details">
+            <div class="quantity-control">
+                <button class="decrease-btn">-</button>
+                <input type="number" id="quantity" value="1" min="1" readonly>
+                <button class="increase-btn">+</button>
+            </div>
+            <img src="iphone.jpg" alt="iPhone 15" class="product-image">
+        </div>
+
+        <div class="price-details">
+            <p>Subtotal: $<span id="subtotal">899</span></p>
+            <p>Discount: -$<span id="discount">161</span></p>
+            <p>Final Price (Price - Discount): $<span id="final-price">738</span></p>
+            <p>Total: $<span id="total">738</span></p>
+        </div>
+    </div>
+</body>
+
+</html>
